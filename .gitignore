@@ -1,0 +1,12 @@
+# R session artifacts
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Large processed objects are intentionally not tracked (see DATA.md)
+*.rds
