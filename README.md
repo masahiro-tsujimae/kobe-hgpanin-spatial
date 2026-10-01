@@ -41,6 +41,27 @@ here.
 
 ---
 
+## System requirements, install time and run time
+
+- **OS / hardware:** any platform that runs R (tested on Windows 11, x86-64). A
+  standard laptop or desktop is sufficient; no GPU or other non-standard
+  hardware is required. The three optional large-object scripts (see
+  [`DATA.md`](DATA.md)) need ~16 GB RAM.
+- **Software:** R 4.4.2 and the CRAN/Bioconductor packages listed in
+  [`environment.txt`](environment.txt) (versions the scripts were tested with).
+- **Typical install time:** installing R plus the listed packages takes about
+  10-20 min on a normal desktop computer with a broadband connection.
+- **Demo / expected run time:** `Rscript reproduce_figures.R` on a fresh clone
+  completed all 10 self-contained panel scripts in about 1.5-2 min (97 s on a
+  Windows 11 laptop, R 4.4.2); each script prints the statistics it computes and
+  a PASS/FAIL summary is printed at the end.
+- **Expected output:** PDF + PNG panels written to
+  `manuscript_figure_panels/<Fig>/panels/`; reference copies produced for the
+  submitted figures are already included there for comparison.
+- **Running on your own data:** each script reads the input tables listed in
+  the script-to-figure map below; replace a table with one of the same column
+  layout to re-run the analysis on other data.
+
 ## Layout
 
 ```
