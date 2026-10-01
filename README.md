@@ -2,10 +2,13 @@
 
 Analysis and figure-generation code for:
 
-**Spatial Epithelial–Stromal Remodeling in Isolated Human HG-PanIN Before Pancreatic Cancer Invasion**
+**Spatial epithelial and stromal remodeling in isolated human pancreatic intraepithelial neoplasia before invasion**
 
-This bundle reproduces the **data panels** of Figures 1–6 and Supplemental
-Figure 10 from processed data. Sequencing data are in NCBI GEO SuperSeries
+Tsujimae M, et al. Manuscript under peer review at *Nature Communications*
+(NCOMMS-26-078461). A Zenodo DOI for the archived release will be added upon publication.
+
+This bundle reproduces the **data panels** of Figures 1–6 and Supplementary
+Fig. 10 from processed data. Sequencing data are in NCBI GEO SuperSeries
 **GSE332553** (SubSeries GSE331451 / GSE331450 / GSE331447).
 
 ---
@@ -74,7 +77,7 @@ code/
 | `Fig5/scripts/fig5_panels.R` | 5C–5H | **needs large object** (merged_subtype_annotated.rds) |
 | `Fig6/scripts/fig6_org3_panels.R` | 6B–6D | organoids3 expression xlsx |
 | `Fig6/scripts/fig6_org4_panels.R` | 6F–6H | organoids4 expression xlsx |
-| `Fig6/scripts/supfig10_2d_panels.R` | Sup 10C–E | 2D cell-line expression xlsx |
+| `Fig6/scripts/supfig10_2d_panels.R` | Supplementary Fig. 10c–e | 2D cell-line expression xlsx |
 
 `Fig4/scripts/_common.R` and `Fig6/scripts/_common.R` hold shared helpers and
 are sourced by the panel scripts. `Fig4` and `Fig6` also include a `run_all.R`.
@@ -105,6 +108,10 @@ This bundle was assembled by `_assemble.py` from the project's
 scripts is rewriting the absolute project root to `.` (and, for the two IHC
 scripts, reading the de-identified CSVs instead of the clinical database).
 Analysis logic and reported statistics are unchanged.
+
+## License
+
+MIT License (see [`LICENSE`](LICENSE)).
 
 ## Contact
 

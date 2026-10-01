@@ -1,5 +1,5 @@
 # =============================================================================
-# Reproduce the data panels of Figures 1-6 and Supplemental Figure 10.
+# Reproduce the data panels of Figures 1-6 and Supplementary Fig. 10.
 #
 # USAGE: run with the working directory set to this bundle root (the folder
 # that contains this file). For example:
